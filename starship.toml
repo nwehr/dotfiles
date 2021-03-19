@@ -4,8 +4,8 @@ format = """
 $username\
 $hostname\
 $shlvl\
-$directory\
 $kubernetes\
+$directory\
 $git_branch\
 $git_commit\
 $git_state\
