@@ -22,7 +22,7 @@ disabled = true
 
 [character]
 success_symbol = "\\$"
-error_symbol = "\\$"
+error_symbol = "[\\$](bold red)"
 
 [cmd_duration]
 disabled = true
@@ -31,7 +31,6 @@ disabled = true
 disabled = false
 format = '[$context( \($namespace\))]($style) '
 style = "bold green"
-
 
 [directory]
 read_only = ""
