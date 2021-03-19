@@ -1,5 +1,60 @@
 add_newline = false
 
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$character"""
+
 [line_break]
 disabled = true
 
@@ -10,9 +65,16 @@ error_symbol = "\\$"
 [cmd_duration]
 disabled = true
 
+[kubernetes]
+disabled = false
+format = '[$context( \($namespace\))]($style) '
+style = "bold green"
+
+
 [aws]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [conda]
 symbol = " "
@@ -21,21 +83,24 @@ format = "[$symbol]($style)"
 [dart]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [directory]
-read_only = " "
+read_only = ""
 
 [docker]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [elixir]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [elm]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [git_branch]
 symbol = " "
@@ -46,11 +111,12 @@ style = "bold purple"
 
 [golang]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
+style = "yellow"
 
 [haskell]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [hg_branch]
 symbol = " "
@@ -58,18 +124,22 @@ symbol = " "
 [java]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [julia]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [memory_usage]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [nim]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [nix_shell]
 symbol = " "
@@ -77,7 +147,7 @@ format = "[$symbol]($style)"
 
 [nodejs]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version]($style)"
 
 [package]
 symbol = " "
@@ -86,23 +156,24 @@ format = "[$symbol]($style)"
 [perl]
 symbol = " "
 format = "[$symbol]($style)"
+disabled = true
 
 [php]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [python]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [ruby]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [rust]
 symbol = " "
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 
 [swift]
 symbol = "ﯣ "
-format = "[$symbol]($style)"
+format = "[$symbol$version]($style)"
