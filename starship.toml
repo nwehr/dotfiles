@@ -22,7 +22,7 @@ disabled = true
 
 [character]
 success_symbol = "\\$"
-error_symbol = "[\\$](bold red)"
+error_symbol = "\\$"
 
 [cmd_duration]
 disabled = true
