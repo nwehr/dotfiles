@@ -11,6 +11,7 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
+Plug 'vheon/vim-cursormode'
 
 call plug#end()
 
@@ -35,6 +36,16 @@ let g:python_highlight_all = 1
 set noshowmode
 set laststatus=2
 let g:lightline = {'colorscheme': 'spaceduck'}
+
+" cursormode
+
+let cursormode_color_map = {
+      \   "n":      "#b3a1e6",
+      \   "i":      "#5ccc96",
+      \   "v":      "#f2ce00",
+      \   "V":      "#f2ce00",
+      \   "\<C-V>": "#00a3cc",
+      \ }
 
 " fzf
 nmap <C-p> :GFiles<CR>
