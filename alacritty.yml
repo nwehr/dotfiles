@@ -1,0 +1,54 @@
+# Space Duck
+colors:
+  # Default colors
+  primary:
+    background: '#0f111b'
+    foreground: '#ecf0c1'
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#e33400'
+    green:   '#5ccc96'
+    magenta:  '#b3a1e6'
+    blue:    '#00a3cc'
+    yellow: '#f2ce00'
+    cyan:    '#7a5ccc'
+    white:   '#686f9a'
+
+  # Bright colors
+  bright:
+    black:   '#686f9a'
+    red:     '#e33400'
+    green:   '#5ccc96'
+    magenta:  '#b3a1e6'
+    blue:    '#00a3cc'
+    yellow: '#f2ce00'
+    cyan:    '#7a5ccc'
+    white:   '#f0f1ce'
+
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: FiraMono Nerd Font Mono
+    style: Regular
+
+  # Point size of the font
+  size: 15.0
+
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+  # OS X only: use thin stroke font rendering. Thin strokes are suitable
+  # for retina displays, but for non-retina you probably want this set to
+  # false.
+  use_thin_strokes: true

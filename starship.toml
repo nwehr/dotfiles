@@ -34,11 +34,13 @@ style = "bold green"
 
 [directory]
 read_only = ""
+style = "bold purple"
 
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
+style = "bold yellow"
 
 [git_status]
-style = "bold purple"
+style = "bold yellow"
 

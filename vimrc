@@ -2,19 +2,39 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'vim-python/python-syntax'
+Plug 'sheerun/vim-polyglot'
+" Plug 'vim-python/python-syntax'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'itchyny/lightline.vim'
+
 call plug#end()
 
 " syntax highlighting
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 syntax enable
-colorscheme default
+colorscheme spaceduck
+
+set background=dark
+set number
+set numberwidth=5
 
 let g:python_highlight_all = 1
+
+" lightline
+set noshowmode
+set laststatus=2
+let g:lightline = {'colorscheme': 'spaceduck'}
 
 " fzf
 nmap <C-p> :GFiles<CR>
@@ -24,10 +44,9 @@ let g:fzf_preview_window = []
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
-  \ 'coc-tsserver',
   \ 'coc-python', 
+  \ 'coc-jedi',
   \ 'coc-eslint',
-  \ 'coc-prettier',
   \ 'coc-json',
   \ ]
 " from readme

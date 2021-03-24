@@ -1,0 +1,4 @@
+URxvt.font: xft:FiraMono Nerd Font Mono:size=15
+URxvt.scrollBar: false
+
+#include ".Xresources.d/theme-solarized"
