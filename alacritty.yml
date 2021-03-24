@@ -6,14 +6,17 @@ colors:
     foreground: '#ecf0c1'
   # Normal colors
   normal:
-    black:   '#000000'
     red:     '#e33400'
+    orange: '#e39400'
     green:   '#5ccc96'
-    magenta:  '#b3a1e6'
-    blue:    '#00a3cc'
     yellow: '#f2ce00'
-    cyan:    '#7a5ccc'
+    purple: '#b3a1e6'
+    darkPurple: '#30365f'
+    cyan:    '#00a3cc'
+    magenta:  '#ce6f8f'
+    blue:    '#00a3cc'
     white:   '#686f9a'
+    black:   '#000000'
 
   # Bright colors
   bright:

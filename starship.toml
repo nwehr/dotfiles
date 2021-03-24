@@ -30,11 +30,11 @@ disabled = true
 [kubernetes]
 disabled = false
 format = '[$context( \($namespace\))]($style) '
-style = "bold green"
+style = "bold #b3a1e6"
 
 [directory]
 read_only = ""
-style = "bold purple"
+style = "bold cyan"
 
 [git_branch]
 symbol = " "

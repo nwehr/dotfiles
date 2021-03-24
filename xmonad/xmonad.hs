@@ -69,7 +69,7 @@ myLauncher = "rofi -show run"
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1: term","2: web","3: code","4: media"] ++ map show [5..9]
+myWorkspaces = ["1: web","2: dev","3: media","4: term"] ++ map show [5..9]
 
 
 ------------------------------------------------------------------------
@@ -184,10 +184,11 @@ base2   = "#eee8d5"
 base3   = "#fdf6e3"
 yellow  = "#f2ce00"
 red     = "#e33400"
-magenta = "#b3a1e6"
+magenta = "#ce6f8f"
 blue    = "#00a3cc"
-cyan    = "#7a5ccc"
+cyan    = "#00a3cc"
 green   = "#5ccc96"
+purple  = "#30365F"
 
 -- sizes
 gap         = 10
@@ -198,7 +199,7 @@ status      = 20
 
 active      = yellow
 activeWarn  = red
-inactive    = magenta
+inactive    = purple
 focusColor  = yellow
 unfocusColor = red
 
